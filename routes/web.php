@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/listele', array('as'=>'listele','uses'=>'ListeleController@getlistele'));
+
+Route::get('/yenikullanici', array('as'=>'yenikullanici','uses'=>'YeniKullaniciController@kayit'));
+
