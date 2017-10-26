@@ -19,3 +19,6 @@ Route::get('/listele', array('as'=>'listele','uses'=>'ListeleController@getliste
 
 Route::get('/yenikullanici', array('as'=>'yenikullanici','uses'=>'YeniKullaniciController@kayit'));
 
+
+
+Route::get('/sonuc', array('as'=>'sonuc','uses'=>'ListeleController@getSonuc'));
