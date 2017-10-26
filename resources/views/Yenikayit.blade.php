@@ -1,9 +1,9 @@
-<title>Yeni Kullanıcı</title>
+<title>Kullanıcı Ekle</title>
 <link rel="stylesheet" href="css\app.css">
 <br><br><br>
 <div class="container">
     <div class="panel panel-default">
-        <div class="panel-heading"  style="font-size: 25;">Formu Doldurunuz : </div>
+        <div class="panel-heading"  style="font-size: 25;">Formu Doldurunuz</div>
         <br>
         <div class="panel-body">
             <form class="form-horizontal" action="{{ url('/kaydet') }}" method="post">
@@ -53,7 +53,7 @@
             </form>
             <a href="/" style=" font-size: 15px; "> Anasayfa'ya Geri Dön</a>
             <br>
-            <a href="/listele" style=" font-size: 15px; "> Kayıtlı Kullanıcılar</a>
+            <a href="/Listele" style=" font-size: 15px; "> Kayıtlı Kullanıcılar</a>
         </div>
     </div>
 </div>

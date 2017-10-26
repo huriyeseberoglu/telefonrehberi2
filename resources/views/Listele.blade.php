@@ -1,4 +1,4 @@
-<title>Kayıtlı Kullanıcılar</title>
+<title>Kullanıcılar</title>
 <link rel="stylesheet" href="\css\app.css">
 <br>
 <div class="container" >

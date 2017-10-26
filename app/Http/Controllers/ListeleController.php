@@ -22,5 +22,18 @@ class ListeleController extends Controller
         return view('Listele', array('kullanıcıliste' => $sonuclar,'aranan' => $aranan));
     }
 
-   
+    public function getSil($idd=0)
+    {
+        if ($idd!=0)
+        {
+            $kullanicisil=Kisiler::where('id','=',$idd)->delete();
+            if ($kullanicisil)
+            {
+                return redirect()->route('listele');
+            }
+            return null;
+        }
+        return null;
+    }
+
 }

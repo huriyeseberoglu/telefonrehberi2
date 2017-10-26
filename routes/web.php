@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 Route::get('/listele', array('as'=>'listele','uses'=>'ListeleController@getlistele'));
 
-Route::get('/yenikullanici', array('as'=>'yenikullanici','uses'=>'YeniKullaniciController@kayit'));
-
-
+Route::get('/yenikayit', array('as'=>'yenikullanici','uses'=>'YeniKullaniciController@kayit'));
 
 Route::get('/sonuc', array('as'=>'sonuc','uses'=>'ListeleController@getSonuc'));
+
+Route::get('/sil/{id?}', array('as'=>'sil','uses'=>'ListeleController@getSil'));

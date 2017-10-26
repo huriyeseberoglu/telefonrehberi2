@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Models\Kisiler;
 use Illuminate\Http\Request;
+use Validator;
 
 class YeniKullaniciController extends Controller
 {
@@ -10,4 +12,6 @@ class YeniKullaniciController extends Controller
     {
         return view('Yenikayit');
     }
+    
+
 }
