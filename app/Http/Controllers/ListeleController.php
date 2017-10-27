@@ -36,4 +36,10 @@ class ListeleController extends Controller
         return null;
     }
 
+    public function getGuncelle($idsi=0)
+    {
+        $kullanici=Kisiler::whereRaw('id=?',array($idsi))->first();
+        return view('Guncelle',array('kullaniciguncelle'=>$kullanici));
+    }
+
 }

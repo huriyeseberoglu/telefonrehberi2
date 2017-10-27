@@ -7,5 +7,5 @@
     <a href="{{ route('listele') }}">Kayıtlı Kullanıcılar</a>
 </div>
 <div class="icerik" style=" position: absolute; right: 610px; top: 390px; font-size: 30 ">
-    <a href="{{ route('yenikullanici') }}">Yeni Kullanıcı</a>
+    <a href="{{ route('yenikayit') }}">Yeni Kullanıcı</a>
 </div>

@@ -53,7 +53,7 @@
             </form>
             <a href="/" style=" font-size: 15px; "> Anasayfa'ya Geri Dön</a>
             <br>
-            <a href="/Listele" style=" font-size: 15px; "> Kayıtlı Kullanıcılar</a>
+            <a href="/listele" style=" font-size: 15px; "> Kayıtlı Kullanıcılar</a>
         </div>
     </div>
 </div>
