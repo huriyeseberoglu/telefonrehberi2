@@ -1,30 +1,32 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Http\Models\Kisiler;
 use Validator;
 class YeniController extends Controller
 {
-    public function kayit()
+    function kayit()
     {
         return view('Yenikayit');
     }
-    
+
     public function postKaydet(Request $request)
     {
+        /** @var $kontrol \Illuminate\Contracts\Validation\Validator*/
         $kontrol= Validator::make($request->all(), array(
-            'adi' => 'required',
-            'soyadi' => 'required',
+            'isim' => 'required',
+            'soyad' => 'required',
             'telefonu' => 'required',
             'digertel' => 'required',
             'adresi' => 'required'
         ));
+
+
         if (!$kontrol->fails())
         {
-            $isim= $request->input('adi');
-            $soyad= $request->input('soyadi');
+            $isim= $request->input('isim');
+            $soyad= $request->input('soyad');
             $telefon= $request->input('telefonu');
             $digertel= $request->input('digertel');
             $adres= $request->input('adresi');
@@ -32,9 +34,11 @@ class YeniController extends Controller
                 'adi' => $isim,
                 'soyadi' => $soyad,
                 'telefon' => $telefon,
-                'adres' => $adres,
-                'diger_telefon' => $digertel
+                'diger_telefon' => $digertel,
+                'adres' => $adres
+
             ));
+
             if ($kaydet)
             {
                 return redirect()->route('listele');

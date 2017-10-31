@@ -34,7 +34,7 @@
                     <div class="form-group">
                         <label class="col-md-4">Diğer Telefon:</label>
                         <div class="col-md-4">
-                            <input type="text" name="diger" class="form-control"  value="{{$kullaniciguncelle->diger_telefon}}">
+                            <input type="text" name="digertel" class="form-control"  value="{{$kullaniciguncelle->diger_telefon}}">
                         </div>
                     </div>
 

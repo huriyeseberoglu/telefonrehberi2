@@ -11,14 +11,14 @@
                 <div class="form-group">
                     <label class="col-md-4">Ad:</label>
                     <div class="col-md-4">
-                        <input type="text" name="adi" class="form-control">
+                        <input type="text" name="isim" class="form-control">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="col-md-4">Soyad:</label>
                     <div class="col-md-4">
-                        <input type="text" name="soyadi" class="form-control">
+                        <input type="text" name="soyad" class="form-control">
                     </div>
                 </div>
 
@@ -32,7 +32,7 @@
                 <div class="form-group">
                     <label class="col-md-4">Diger Telefon:</label>
                     <div class="col-md-4">
-                        <input type="text" name="tel" class="form-control">
+                        <input type="text" name="digertel" class="form-control">
                     </div>
 
                 </div>
