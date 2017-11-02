@@ -48,7 +48,7 @@
                     <div class="form-group">
                         <label class="col-md-4">Mail:</label>
                         <div class="col-md-4">
-                            <input type="text" name="email" class="form-control"  value="{{$kullaniciguncelle->adres}}">
+                            <input type="text" name="email" class="form-control"  value="{{$kullaniciguncelle->email}}">
                         </div>
                     </div>
                     <br>
