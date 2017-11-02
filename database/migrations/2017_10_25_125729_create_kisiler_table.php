@@ -20,6 +20,7 @@ class CreateKisilerTable extends Migration
             $table->string('telefon')->unique();
             $table->string('diger_telefon');
             $table->string('adres');
+            $table->string('email');
             $table->timestamps();
         });
     }

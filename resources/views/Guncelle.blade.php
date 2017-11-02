@@ -44,6 +44,13 @@
                             <input type="text" name="adresi" class="form-control"  value="{{$kullaniciguncelle->adres}}">
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4">Mail:</label>
+                        <div class="col-md-4">
+                            <input type="text" name="email" class="form-control"  value="{{$kullaniciguncelle->adres}}">
+                        </div>
+                    </div>
                     <br>
 
                     <div class="form-group">

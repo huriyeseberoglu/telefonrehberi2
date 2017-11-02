@@ -43,6 +43,13 @@
                         <input type="text" name="adresi" class="form-control">
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label class="col-md-4">E mail:</label>
+                    <div class="col-md-4">
+                        <input type="text" name="email" class="form-control">
+                    </div>
+                </div>
                 <br>
 
                 <div class="form-group">
