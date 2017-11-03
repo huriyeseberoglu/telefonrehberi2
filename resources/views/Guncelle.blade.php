@@ -51,6 +51,14 @@
                             <input type="text" name="email" class="form-control"  value="{{$kullaniciguncelle->email}}">
                         </div>
                     </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4">Resim:</label>
+                        <div class="col-md-4">
+                            <input type="file" name="resim">
+                        </div>
+                    </div>
                     <br>
 
                     <div class="form-group">

@@ -23,6 +23,7 @@
                     <th>Diger Telefon :</th>
                     <th>Adresi :</th>
                     <th>Mail :</th>
+                    <th>Resim:</th>
                     <th>İşlemler :</th>
                 </tr>
                 @foreach($kullanıcıliste as $kullanıcı)
@@ -33,6 +34,7 @@
                         <td>{{ $kullanıcı -> diger_telefon }}</td>
                         <td>{{ $kullanıcı -> adres }}</td>
                         <td>{{ $kullanıcı -> email }}</td>
+                        <td></td>
                         <td><a href="{{url('/guncelle/'.$kullanıcı->id)}}">Güncelle</a> -  <a href="{{url('/sil/'.$kullanıcı->id)}}">Sil</a></td>
                     </tr>
                 @endforeach
