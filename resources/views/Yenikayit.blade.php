@@ -54,11 +54,11 @@
                 <div class="form-group">
                     <label class="col-md-4">Resim:</label>
                     <div class="col-md-4">
-                      <input type="file" name="resim">
+                      <input type="file" name="resim" class="form-control">
                     </div>
                 </div>
                 <br>
-                
+
                 <div class="form-group">
                     <div class="col-md-4">
                         <input type="submit" name="kaydet" class="btn btn-primary" value="Kaydet">

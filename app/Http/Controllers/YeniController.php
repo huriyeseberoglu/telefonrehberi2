@@ -20,7 +20,8 @@ class YeniController extends Controller
             'telefonu' => 'required',
             'digertel' => 'required',
             'adresi' => 'required',
-            'email' => 'required'
+            'email' => 'required',
+            'resim' => 'required'
         ));
 
 
@@ -32,13 +33,15 @@ class YeniController extends Controller
             $digertel= $request->input('digertel');
             $adres= $request->input('adresi');
             $mail= $request->input('email');
+            $resim= $request->input('resim');
             $kaydet= Kisiler::create(array(
                 'adi' => $isim,
                 'soyadi' => $soyad,
                 'telefon' => $telefon,
                 'diger_telefon' => $digertel,
                 'adres' => $adres,
-                'email' => $mail
+                'email' => $mail,
+                'resim' => $resim
 
             ));
 
@@ -58,7 +61,8 @@ class YeniController extends Controller
             'telefonu' => 'required',
             'digertel' => 'required',
             'adresi' => 'required',
-            'email' => 'required'
+            'email' => 'required',
+            'resim' => 'required'
         ));
         if (!$kontrol->fails())
         {
@@ -69,6 +73,7 @@ class YeniController extends Controller
             $dtelefon= $request->input('digertel');
             $adres= $request->input('adresi');
             $mail= $request->input('email');
+            $resim= $request->input('resim');
             $kullanici= Kisiler::find($idsi);
 
             $kullanici->adi=$adi;
@@ -77,6 +82,7 @@ class YeniController extends Controller
             $kullanici->diger_telefon=$dtelefon;
             $kullanici->adres=$adres;
             $kullanici->email=$mail;
+            $kullanici->resim=$resim;
             $kullanici->save();
             return redirect()->route('listele');
         }

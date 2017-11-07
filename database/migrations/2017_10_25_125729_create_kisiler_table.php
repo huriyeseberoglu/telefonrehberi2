@@ -21,6 +21,7 @@ class CreateKisilerTable extends Migration
             $table->string('diger_telefon');
             $table->string('adres');
             $table->string('email');
+            $table->blob('resim');
             $table->timestamps();
         });
     }
