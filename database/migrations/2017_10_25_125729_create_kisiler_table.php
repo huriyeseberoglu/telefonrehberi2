@@ -17,11 +17,10 @@ class CreateKisilerTable extends Migration
             $table->increments('id');
             $table->string('adi');
             $table->string('soyadi');
-            $table->string('telefon')->unique();
-            $table->string('diger_telefon');
+            $table->string('telefon');
             $table->string('adres');
             $table->string('email');
-            $table->blob('resim');
+            $table->string('resim');
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ class ListeleController extends Controller
     {
         $aranan=Input::get('aramasorgusu');
         $aranankelime="%$aranan%";
-        $sonuclar=Kisiler::whereRaw('adi like ? or soyadi like ? or telefon like ? or adres like ? or email like ? or diger_telefon like ?',array($aranankelime,$aranankelime,$aranankelime,$aranankelime,$aranankelime,$aranankelime))->get();
+        $sonuclar=Kisiler::whereRaw('adi like ? or soyadi like ? or telefon like ? or adres like ? or email like ?',array($aranankelime,$aranankelime,$aranankelime,$aranankelime,$aranankelime))->get();
 
         return view('Listele', array('kullanıcıliste' => $sonuclar,'aranan' => $aranan));
     }

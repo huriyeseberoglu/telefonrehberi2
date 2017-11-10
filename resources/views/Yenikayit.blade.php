@@ -6,7 +6,7 @@
         <div class="panel-heading"  style="font-size: 25;">Formu Doldurunuz</div>
         <br>
         <div class="panel-body">
-            <form class="form-horizontal" action="{{ url('/kaydet') }}" method="post">
+            <form class="form-horizontal" action="{{ url('/kaydet') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label class="col-md-4">Ad:</label>
@@ -27,14 +27,6 @@
                     <div class="col-md-4">
                         <input type="text" name="telefonu" class="form-control">
                     </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-4">Diger Telefon:</label>
-                    <div class="col-md-4">
-                        <input type="text" name="digertel" class="form-control">
-                    </div>
-
                 </div>
 
                 <div class="form-group">

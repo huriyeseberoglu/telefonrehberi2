@@ -18,19 +18,16 @@ class YeniController extends Controller
             'isim' => 'required',
             'soyad' => 'required',
             'telefonu' => 'required',
-            'digertel' => 'required',
             'adresi' => 'required',
             'email' => 'required',
             'resim' => 'required'
         ));
-
 
         if (!$kontrol->fails())
         {
             $isim= $request->input('isim');
             $soyad= $request->input('soyad');
             $telefon= $request->input('telefonu');
-            $digertel= $request->input('digertel');
             $adres= $request->input('adresi');
             $mail= $request->input('email');
             $resim= $request->input('resim');
@@ -38,7 +35,6 @@ class YeniController extends Controller
                 'adi' => $isim,
                 'soyadi' => $soyad,
                 'telefon' => $telefon,
-                'diger_telefon' => $digertel,
                 'adres' => $adres,
                 'email' => $mail,
                 'resim' => $resim
@@ -59,7 +55,6 @@ class YeniController extends Controller
             'adi' => 'required',
             'soyadi' => 'required',
             'telefonu' => 'required',
-            'digertel' => 'required',
             'adresi' => 'required',
             'email' => 'required',
             'resim' => 'required'
@@ -70,7 +65,6 @@ class YeniController extends Controller
             $adi= $request->input('adi');
             $soyad= $request->input('soyadi');
             $telefon= $request->input('telefonu');
-            $dtelefon= $request->input('digertel');
             $adres= $request->input('adresi');
             $mail= $request->input('email');
             $resim= $request->input('resim');
@@ -79,7 +73,6 @@ class YeniController extends Controller
             $kullanici->adi=$adi;
             $kullanici->soyadi=$soyad;
             $kullanici->telefon=$telefon;
-            $kullanici->diger_telefon=$dtelefon;
             $kullanici->adres=$adres;
             $kullanici->email=$mail;
             $kullanici->resim=$resim;

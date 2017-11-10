@@ -20,7 +20,6 @@
                     <th>Adı :</th>
                     <th>Soyadı :</th>
                     <th>Telefon Numarası :</th>
-                    <th>Diger Telefon :</th>
                     <th>Adresi :</th>
                     <th>Mail :</th>
                     <th>Resim:</th>
@@ -31,7 +30,6 @@
                         <td>{{ $kullanıcı -> adi }}</td>
                         <td>{{ $kullanıcı -> soyadi }}</td>
                         <td>{{ $kullanıcı -> telefon }}</td>
-                        <td>{{ $kullanıcı -> diger_telefon }}</td>
                         <td>{{ $kullanıcı -> adres }}</td>
                         <td>{{ $kullanıcı -> email }}</td>
                         <td>{{ $kullanıcı -> resim }}</td>
